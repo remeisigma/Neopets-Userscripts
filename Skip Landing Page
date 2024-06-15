@@ -1,0 +1,12 @@
+// ==UserScript==
+// @name         Neopets - Skip Landing
+// @version      2024-06-14
+// @description  Skips the neopets launch page and redirect to the neopets home page
+// @author       remeisigma
+// @match        https://www.neopets.com/
+// @grant        none
+// ==/UserScript==
+
+if(!location.search.length) {
+    location.replace(location.pathname + 'home/index.phtml');
+}
